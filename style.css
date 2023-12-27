@@ -287,10 +287,20 @@ padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: aqua; */
+    margin-right: 20rem;
 }
-.js,.react{
+.js{
     flex: 50%;
     padding: 2rem;
+    /* margin-right: rem; */
+    /* background-color: yellowgreen; */
+}
+.react{
+    flex: 50%;
+    padding: 2rem;
+    /* margin-left: -12rem; */
+    /* margin-right: 6rem; */
 }
 
 .webdev3{
@@ -300,6 +310,7 @@ padding: 2rem;
 }
 
 .ang,.ionic{
+    margin-right: 16rem;
     flex: 50%;
     padding: 2rem;
 }
@@ -364,7 +375,32 @@ animation and border radius */
 }
 
 .javascript {
-    width: 55%;
+    width: 45%;
+}
+
+.react{
+    width: 35%;
+}
+
+.ang{
+    width: 30%;
+}
+ 
+.ionic{
+    width: 30%;
+}
+
+.sql{
+    width:75%;
+}
+.mdb{
+    width: 50%;
+}
+.git{
+    width: 70%;
+}
+.vscode{
+    width: 60%;
 }
 
 /* Animating the progress bar by 
@@ -460,6 +496,11 @@ initially starting from 0*/
     background-color : #222222;
     margin : 30px 10px;
     padding : 20px 15px;
+
+    border-style: solid;
+    border-color: #ffbe98;
+    border-radius: 15px;
+    border-width: 2px;
     
     display : flex;
     flex-direction : column;
@@ -475,6 +516,11 @@ initially starting from 0*/
     background-color : #222222;
     margin : 30px 10px;
     padding : 20px 15px;
+
+    border-style: solid;
+    border-color: #ffbe98;
+    border-radius: 15px;
+    border-width: 2px;
     
     display : flex;
     flex-direction : column;
@@ -490,6 +536,11 @@ initially starting from 0*/
     background-color : #222222;
     margin : 30px 10px;
     padding : 20px 15px;
+
+    border-style: solid;
+    border-color: #ffbe98;
+    border-radius: 15px;
+    border-width: 2px;
     
     display : flex;
     flex-direction : column;
@@ -516,6 +567,11 @@ initially starting from 0*/
     position : relative;
     width : 260px;
     height : 260px;
+
+    border-style: solid;
+    border-color:darkslategray;
+    border-radius: 15px;
+    border-width: 2px;
     
     top : -40%;
     left: 8px;
@@ -527,6 +583,11 @@ initially starting from 0*/
     position : relative;
     width : 260px;
     height : 260px;
+
+    border-style: solid;
+    border-color:darkslategray;
+    border-radius: 15px;
+    border-width: 2px;
     
     top : -40%;
     left: 8px;
@@ -538,7 +599,12 @@ initially starting from 0*/
     position : relative;
     width : 260px;
     height : 260px;
-    
+
+    border-style: solid;
+    border-color:darkslategray;
+    border-radius: 15px;
+    border-width: 2px;
+   
     top : -40%;
     left: 8px;
     box-shadow : 0 5px 20px rgba(0,0,0,0.2);
