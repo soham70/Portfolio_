@@ -74,6 +74,7 @@
 .skills{
     display: flex;
     flex-direction: row;
+    margin-top: -15rem;
 
     .myskills{
         /* display: flex;
@@ -159,6 +160,7 @@
     .projects {
       display: flex; /* Ensure elements stack vertically */
       flex-direction: column;
+      margin-top: 4rem;
     }
   
     .projecttitle {
@@ -198,7 +200,7 @@
     }
 
 footer{
-    width: 70vh;
+    width: 50vh;
 p{
     font-size: 15px;
     text-align: center;
