@@ -1,0 +1,185 @@
+@media (max-width: 767px) {
+    .container {
+      display:flex; /* Ensure columns stack vertically */
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-left: 20rem;
+    }
+  
+    .column1 {
+      order: 2; /* Move column1 below column2 */
+
+      h2{
+        font-size: 2rem;
+      }
+      h1{
+        font-size: 4rem;
+      }
+      p{
+        font-size: 30px;
+      }
+    }
+  
+    .column2 {
+      order: 1; /* Move column2 above column1 */
+      text-align: center; /* Center image on mobile */
+      justify-content: center;
+      align-items: center;
+      img{
+        height: 300px;
+        width: 300px;
+      }
+    }
+  
+    .title {
+      text-align: center; /* Center title on mobile */
+    }
+
+
+    .about{
+        width: 300vw;
+    }
+
+    .aboutinfo{
+        display: flex;
+        flex-direction: row;
+        
+        .aboutimage{
+        display: none;
+        }
+
+    .abouttext{
+        justify-content: center;
+        h3{
+            font-size: 3rem;
+        }
+        h5{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+
+}
+
+.skills{
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: row;
+
+    .myskills{
+        /* display: flex;
+        flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        margin-left: 18rem;
+        margin-top: 13rem;
+
+        h3{
+        text-decoration: none;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color:#ffbe98 ;
+        font-size: 2rem;
+    }
+    h3:before, h3:after {
+        display: none;
+    }
+    h5{
+        display: none;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .proglang,.webdev1,.webdev2,.dbs{
+        margin-left: -10rem;
+        /* flex: 50%; */
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        .cpp,.python,.html,.css,.js,.react,.sql,.mdb{
+            width: 50px;
+            height: 50px;
+        }
+        
+    }
+    .webdev1{
+        margin-right: 12rem;
+    }
+    .webdev2{
+        margin-left: -6rem;
+    }
+    .dbs{
+        margin-top: -30px;
+        margin-left: 40px;
+    }
+    .webdev3,.tool{
+        display: none;
+    }
+
+    }
+}
+
+/* 
+.projects{
+    .projecttitle{
+        margin-left: 25rem;
+        text-align: center;
+        h3:before ,h3:after{
+            display: none;
+
+        }
+    }
+
+    .proj1,.proj2,.proj3{
+        display: block;
+    }
+
+} */
+
+    .projects {
+      display: flex; /* Ensure elements stack vertically */
+      flex-direction: column;
+    }
+  
+    .projecttitle {
+      text-align: center; /* Center title on mobile */
+      margin-left: 22rem;
+    }
+
+    h3:after{
+        margin-right: -8rem;
+    }
+    
+    h3:before{
+        margin-left: -7rem;
+      }
+  
+    .projinfo {
+      flex-wrap: wrap; /* Allow projects to wrap onto multiple rows */
+    }
+  
+    .proj1, .proj2, .proj3 {
+      flex-basis: 100%; /* Give each project full width on mobile */
+      margin-bottom: 20px; /* Add spacing between projects */
+    }
+  
+    .p1card, .p2card, .p3card {
+      display: flex; /* Layout image and text vertically */
+      flex-direction: column;
+      align-items: center; /* Align image and text centrally */
+    }
+  
+    .p1img, .p2img, .p3img {
+      margin-bottom: 10px; /* Add spacing between image and text */
+    }
+  
+    .p1card-text, .p2card-text, .p3card-text {
+      text-align: center; /* Center text on mobile */
+    }
+
+  }
+
