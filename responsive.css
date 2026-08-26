@@ -1,212 +1,142 @@
-@media (max-width: 767px) {
-    .container {
-      display:flex; /* Ensure columns stack vertically */
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      width:50vw;
-      height: 100vh;
-    }
-  
-    .column1 {
-      /* order: 2; Move column1 below column2 */
-      flex:50%;
-
-      h2{
-        font-size:25px;
-      }
-      h1{
-        font-size: 50px;
-      }
-      p{
-        font-size: 20px;
-      }
-      .icons{
-        margin-left: 25px;
-      }
-    }
-  
-    .column2 {
-        flex:50%;
-      text-align: center; /* Center image on mobile */
-      justify-content: center;
-      align-items: center;
-      img{
-        height: 200px;
-        width: 200px;
-      }
-    }
-  
-    .title {
-      text-align: center; /* Center title on mobile */
-    }
-
-
-    .about{
-        width: 130vw;
-    }
-
-    .aboutinfo{
-        display: flex;
-        flex-direction: row;
-        
-        .aboutimage{
-        display: none;
-        }
-
-    .abouttext{
-        justify-content: center;
-        h3{
-            font-size: 30px;
-        }
-        h5{
-            font-size: 20px;
-        }
-        p{
-            font-size: 15px;
-            text-align: justify;
-        }
-    }
-
-}
-
-.skills{
-    display: flex;
-    flex-direction: row;
-    margin-top: -15rem;
-
-    .myskills{
-        /* display: flex;
-        flex-direction: column; */
-        justify-content: center;
-        align-items: center;
-        margin-left: 3rem;
-        margin-top: 10rem;
-
-        h3{
-        text-decoration: none;
-        text-align: center;
-        text-decoration: underline;
-        text-decoration-color:#ffbe98 ;
-        font-size: 30px;
-    }
-    h3:before, h3:after {
-        display: none;
-    }
-    h5{
-        display: none;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    .proglang,.webdev1,.webdev2,.dbs{
-        /* flex: 50%; */
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-left: -2rem;
-        width:max-content ;
-        
-        .progress-bar-container{
-            .progress-bar{
-                width: 200px;
-            }
-        }
-
-        .cpp,.python,.html,.css,.js,.react,.sql,.mdb{
-            width: 20px;
-            height: 20px;
-        }
-        h2{
-            font-size: 15px;
-        }
-
-    }
-    .webdev1{
-        margin-right: 12rem;
-    }
-    .webdev2{
-        margin-left: -2rem;
-    }
-    .dbs{
-        margin-top: -30px;
-        margin-left: -2rem;
-    }
-    .webdev3,.tool{
-        display: none;
-    }
-
-    }
-}
-
-/* 
-.projects{
-    .projecttitle{
-        margin-left: 25rem;
-        text-align: center;
-        h3:before ,h3:after{
-            display: none;
-
-        }
-    }
-
-    .proj1,.proj2,.proj3{
-        display: block;
-    }
-
-} */
-
-    .projects {
-      display: flex; /* Ensure elements stack vertically */
-      flex-direction: column;
-      margin-top: 4rem;
-    }
-  
-    .projecttitle {
-      text-align: center; /* Center title on mobile */
-      margin-left: 0rem;
-    }
-
-    h3:after{
-        margin-right: -10rem;
-    }
-    
-    h3:before{
-        margin-left: -10rem;
-      }
-  
-    .projinfo {
-      flex-wrap: wrap; /* Allow projects to wrap onto multiple rows */
-    }
-  
-    .proj1, .proj2, .proj3 {
-      flex-basis: 100%; /* Give each project full width on mobile */
-      margin-bottom: 20px; /* Add spacing between projects */
-    }
-  
-    .p1card, .p2card, .p3card {
-      display: flex; /* Layout image and text vertically */
-      flex-direction: column;
-      align-items: center; /* Align image and text centrally */
-    }
-  
-    .p1img, .p2img, .p3img {
-      margin-bottom: 10px; /* Add spacing between image and text */
-    }
-  
-    .p1card-text, .p2card-text, .p3card-text {
-      text-align: center; /* Center text on mobile */
-    }
-
-footer{
-    width: 50vh;
-p{
-    font-size: 15px;
+@media (max-width: 900px) {
+  .hero-container {
+    grid-template-columns: 1fr;
     text-align: center;
-}
-}
-
-
+    gap: 2rem;
   }
-
+  .hero-content {
+    order: 2;
+  }
+  .hero-image {
+    order: 1;
+  }
+  .hero-summary {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .image-ring {
+    width: 260px;
+    height: 260px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .about-image img {
+    max-width: 260px;
+  }
+  .about-content p {
+    text-align: center;
+  }
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(34, 34, 34, 0.98);
+    backdrop-filter: blur(12px);
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 0.5rem;
+    border-bottom: 1px solid var(--border);
+    transform: translateY(-120%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+  }
+  .nav-resume {
+    margin-left: 0;
+  }
+  .nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .hero {
+    padding-top: 5rem;
+    min-height: auto;
+    padding-bottom: 3rem;
+  }
+  .hero-name {
+    font-size: 2.25rem;
+  }
+  .section {
+    padding: 3.5rem 0;
+  }
+  .section-title {
+    font-size: 1.65rem;
+    margin-bottom: 2rem;
+  }
+  .timeline {
+    padding-left: 1.5rem;
+  }
+  .timeline-marker {
+    left: -1.5rem;
+  }
+  .timeline-header {
+    flex-direction: column;
+  }
+  .timeline-date {
+    align-self: flex-start;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+  .scroll-indicator {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+  .highlight-card {
+    flex-direction: column;
+    text-align: center;
