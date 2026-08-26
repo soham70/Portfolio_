@@ -3,351 +3,172 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Soham Sheth</title>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-
-    <script src="./index.js"></script>
-
+    <meta
+      name="description"
+      content="Soham Sheth — Software Engineer specializing in Java backend development, Spring Boot, and REST APIs." />
+    <title>Soham Sheth | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet" />
-
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
   </head>
   <body>
- 
-
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">SS</a>
         <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active"
-                aria-current="page"
-                href="#home"
-                style="color: white"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li>
+            <a
+              href="./assets/Soham-Sheth-Resume.pdf"
+              class="nav-link nav-resume"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
-          </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="./assets/Soham-Sheth-Resume.pdf" target="_blank">Resume</a>
-            </li>
-          </ul>
-        </div>
+        </ul>
       </div>
     </nav>
-
-    <section id="home">
-      <div class="container">
-        <div class="column1" style="color: #444444">
-          <div class="title">
-            <h2>I'm <span style="color: #ffbe98">Soham,</span></h2>
-            <!-- <h1 class="subtitle">
-              Software <br />
-              Developer
-            </h1> -->
-            <h1>
-              <a href="" class="typewrite"
-                data-period="2000" 
-                data-type='[ "I am a Problem Solver.🎯","I Develop Software.💻","I love to write Code.👩‍💻","I love to Travel.✈️" ]'>
-                <span class="wrap"></span>
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">Soham <span class="accent">Sheth</span></h1>
+          <h2 class="hero-tagline">
+            <a
+              href=""
+              class="typewrite"
+              data-period="2000"
+              data-type='["Software Engineer.","Java Backend Developer.","Problem Solver.","REST API Builder."]'>
+              <span class="wrap"></span>
+            </a>
+          </h2>
+          <p class="hero-summary">
+            Building scalable backend services with Java &amp; Spring Boot.
+            2+ years of experience in enterprise applications and REST APIs.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a
+              href="./assets/Soham-Sheth-Resume.pdf"
+              class="btn btn-outline"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Download Resume</a
+            >
+          </div>
+          <div class="social-links">
+            <span class="social-label">Connect with me</span>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/soham70/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
               </a>
-            </h1>
-
-            <div class="connect">
-              <div class="connecttext">
-                <p>Connect with me:</p>
-              </div>
-              <div class="icons">
-                <a href="https://www.linkedin.com/in/soham70/"
-                  ><i class="fa fa-brands fa-linkedin"></i
-                ></a>
-                <span>
-                  <a href="https://github.com/soham70"
-                    ><i class="fa fa-brands fa-github"></i></a
-                ></span>
-                <span>
-                  <a href="https://www.instagram.com/sohams11/"
-                    ><i class="fa fa-brands fa-instagram"></i></a
-                ></span>
-                <span>
-                  <a href=""><i class="fa fa-sharp fa-solid fa-x"></i></a
-                ></span>
-              </div>
+              <a
+                href="https://github.com/soham70"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a
+                href="mailto:shethsoham2001@gmail.com"
+                aria-label="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/sohams11/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
             </div>
           </div>
         </div>
-
-        <div class="column2" style="color: #ffbe98">
-          <img
-            class="myimage"
-            src="./assets/MyPhoto.jpg"
-            alt="My_Prof_Photo" />
+        <div class="hero-image">
+          <div class="image-ring">
+            <img
+              src="./assets/My_Prof_Photo.jpeg"
+              alt="Soham Sheth"
+              class="profile-photo" />
+          </div>
         </div>
       </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
     </section>
-
-    <section id="about">
-      <div class="about">
-        <div class="aboutme">
-          <!-- <h3>About Me</h3> -->
-        </div>
-        <div class="aboutinfo">
-          <div class="aboutimage">
-            <img class="abtimg" src="./assets/myself.png" alt="" />
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="./assets/myself.png" alt="Soham at work" />
           </div>
-          <div class="abouttext">
-            <h3>About Me</h3>
-            <h5>Hello,I'm Soham,</h5>
+          <div class="about-content">
+            <h3>Software Engineer &amp; Backend Developer</h3>
             <p>
-              I am currently pursuing my Bachelor's in Information Technology
-              from Pune Institute of Computer Technology.My area of interests
-              lie in the field of Software Development.I have experience
-              developing applications with MERN Stack.I have also won TIAA
-              Intercollege Hackathon. I am currently Intern at Snow Design
-              House,UK where I am responsible for developing the User Interface
-              of the YumBlock Application.
+              I'm a Software Engineer with 2 years of experience in Java
+              backend development, building REST APIs and enterprise
+              applications using Java 8/17, Spring Boot, SQL, and GitLab CI/CD.
+              I have strong exposure to batch processing, system optimization,
+              and production support in large-scale environments.
             </p>
             <p>
-              Beyond the confines of code, I read books,cook and play keyboard.
-              These pursuits not only serve as an outlet for creativity but also
-              contribute to a well-rounded perspective that I bring to my
-              professional endeavors.
+              I graduated with a Bachelor's in Information Technology from
+              Pune Institute of Computer Technology (CGPA: 8.98/10). Beyond
+              code, I enjoy reading, cooking, and playing keyboard — pursuits
+              that keep me creative and balanced.
             </p>
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <i class="fa-solid fa-trophy accent-icon"></i>
+                <div>
+                  <strong>3rd Place</strong>
+                  <span>TIAA Intercollege Hackathon</span>
+                </div>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-code accent-icon"></i>
+                <div>
+                  <strong>300+</strong>
+                  <span>LeetCode Problems Solved</span>
+                </div>
+              </div>
+              <div class="highlight-card">
+                <i class="fa-solid fa-graduation-cap accent-icon"></i>
+                <div>
+                  <strong>8.98 CGPA</strong>
+                  <span>PICT — B.Tech IT, 2024</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
-    <section id="skills">
-      <div class="skills">
-        <div class="myskills">
-          <h3>My Skills</h3>
-          <h5>Programming Languages & Frameworks</h5>
-          <!-- Programming Languages -->
-          <div class="proglang">
-            <div class="cpp">
-              <div class="progress-bar-container">
-                <h2>C/C++</h2>
-                <div class="progress-bar">
-                  <span class="percentage c"></span>
-                </div>
-              </div>
-            </div>
-            <div class="python">
-              <div class="progress-bar-container">
-                <h2>Python</h2>
-                <div class="progress-bar">
-                  <span class="percentage python"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Web Development -->
-          <div class="webdev1">
-            <div class="html">
-              <div class="progress-bar-container">
-                <h2>HTML</h2>
-                <div class="progress-bar">
-                  <span class="percentage html"></span>
-                </div>
-              </div>
-            </div>
-            <div class="css">
-              <div class="progress-bar-container">
-                <h2>CSS</h2>
-                <div class="progress-bar">
-                  <span class="percentage css"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="webdev2">
-            <div class="js">
-              <div class="progress-bar-container">
-                <h2>Javascript</h2>
-                <div class="progress-bar">
-                  <span class="percentage javascript"></span>
-                </div>
-              </div>
-            </div>
-            <div class="react">
-              <div class="progress-bar-container">
-                <h2>React</h2>
-                <div class="progress-bar">
-                  <span class="percentage react"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="webdev3">
-            <div class="ang">
-              <div class="progress-bar-container">
-                <h2>Angular</h2>
-                <div class="progress-bar">
-                  <span class="percentage ang"></span>
-                </div>
-              </div>
-            </div>
-            <div class="ionic">
-              <div class="progress-bar-container">
-                <h2>Ionic</h2>
-                <div class="progress-bar">
-                  <span class="percentage ionic"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="dbdt">
-<h5>Development Tools & Databases</h5>
-</div>
-
-<div class="dbs">
-  <div class="sql">
-    <div class="progress-bar-container">
-      <h2>SQL</h2>
-      <div class="progress-bar">
-        <span class="percentage sql"></span>
-      </div>
-    </div>
-  </div>
-  <div class="mongo">
-    <div class="progress-bar-container">
-      <h2>MongoDB</h2>
-      <div class="progress-bar">
-        <span class="percentage mdb"></span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="tool">
-  <div class="github">
-    <div class="progress-bar-container">
-      <h2>Github</h2>
-      <div class="progress-bar">
-        <span class="percentage git"></span>
-      </div>
-    </div>
-  </div>
-  <div class="vsc">
-    <div class="progress-bar-container">
-      <h2>VSCode</h2>
-      <div class="progress-bar">
-        <span class="percentage vscode"></span>
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    </div>
-    </section>
-
-    <section id="projects">
-      <div class="projects">
-       <div class="projecttitle">
-        <h3>Projects</h3>
-       </div>
-
-        <div class="projinfo"> 
-       <div class="proj1"> 
-        <div class="p1card" >
-          <div class="p1img">
-            <img style="height:140px;" src="./assets/projone.jpg
-            " alt="">
-          </div>
-          <div class="p1card-text">
-            <h5>SnapFolio</h5>
-            <p> SnapFolio is my cool website made with HTML and CSS.
-               It shows off my skills, projects, and stuff about me. 
-               It's easy to use and lets you check out what I'm all about. 
-              Dive into my SnapFolio and see my professional journey! 
-            </p>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="proj2">
-        <div class="p2card" >
-          <!-- <img class="card-img-top" src="./assets/projone.jpg" alt="Card image cap"> -->
-          <div class="p2img">
-            <img src="./assets/projtwo.jpg" alt="">
-          </div>
-          <div class="p2card-text">
-            <h5>CritiQ:Movie Review Application</h5>
-            <p>CritiQ is a movie review application built using MERN stack.
-            It allows users to read reviews of the movies,add own reviews and also rate the reviews.
-            It uses ReactJs for the frontend,Node and ExpressJS as server side technologies and MongoDB as Database.  
-            </p>
-          </div>
-        </div> 
-      </div>
-
-      <div class="proj3">
-        <div class="p3card" >
-         <div class="p3img"> <img src="./assets/projthree.jpg" alt=""></div>
-          <div class="p3card-text">
-            <h5>Prescriptor</h5>
-            <p>Prescriptor is a prescription management application built using MERN stack.
-              It allows doctors to autofill the medicine and also allows to download PDF of the 
-              prescription ,built using jsPdf library.It provides seamless user interface ,
-              developed using React,Node,Express and MongoDB. 
-           
-            </p>
-          </div>
-        </div> 
-       </div> 
-
-    </div> 
-
-       </div>
-     
-    </section>
-
-    <footer>
-      <div class="end" >
-        <p>
-          Copyright
-         ©️ Soham Sheth ,Inc 
-        </p>
-      </div>
-    </footer>
-
-
-  </body>
-</html>
